@@ -14,16 +14,3 @@ A clean, responsive, single-page website built to educate users on the science o
 *   **HTML5** - For semantic structure and content.
 *   **CSS3** - For styling, layout, and mobile responsiveness (no external frameworks used).
 
-## 🌐 Live Demo
-
-You can view the live version of this website here: 
-**[Insert your GitHub Pages link here, e.g., https://yourusername.github.io/muscle-building-academy/]**
-
-## 💻 How to Use
-
-If you want to download and modify this code for yourself:
-
-1. Clone the repository: `git clone https://github.com/yourusername/muscle-building-academy.git`
-2. Open the project folder.
-3. Double-click the `index.html` file to open it in your default web browser.
-4. Edit the HTML/CSS files in any text editor (like VS Code or Notepad) to customize the text, colors, and routines.
