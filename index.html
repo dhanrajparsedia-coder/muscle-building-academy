@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Coaching | Muscle Building Academy</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        
+        /* Navigation */
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .btn {
+            display: inline-block;
+            background: #e50914;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #b20710;
+        }
+
+        /* Section Header Utility */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Core Philosophy Section */
+        .philosophy {
+            padding: 80px 10%;
+            background: #f4f4f4;
+        }
+        .modules {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            width: 30%;
+            min-width: 280px;
+            margin-bottom: 30px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .card h3 {
+            color: #e50914;
+            font-size: 1.4rem;
+        }
+
+        /* Workout Routines Section */
+        .routines-section {
+            padding: 80px 10%;
+            background: #fff;
+        }
+        .routine-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .day-block {
+            background: #fdfdfd;
+            border-left: 5px solid #e50914;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+        .day-title {
+            font-size: 1.5rem;
+            color: #111;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .exercise-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .exercise-table th, .exercise-table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .exercise-table th {
+            background-color: #f4f4f4;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .exercise-table th, .exercise-table td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Iron Coaching</div>
+    </header>
+
+    <section class="hero">
+        <h1>Build Raw Muscle & Strength</h1>
+        <p>No gimmicks, just science-backed training methods. Learn the fundamentals of hypertrophy, progressive overload, and proper recovery.</p>
+        <a href="#routines" class="btn">View the Workout Plan</a>
+    </section>
+
+    <section class="philosophy">
+        <h2 class="section-title">The Triangle of Gains</h2>
+        <p class="section-subtitle">True muscle growth relies on three non-negotiable pillars.</p>
+        <div class="modules">
+            <div class="card">
+                <h3>1. The Stimulus</h3>
+                <p>Master the fundamental compound movements. We focus on mechanical tension and consistent progressive overload.</p>
+            </div>
+            <div class="card">
+                <h3>2. The Fuel</h3>
+                <p>You cannot out-train a bad diet. Learn how to calculate your calorie surplus and hit your daily protein targets.</p>
+            </div>
+            <div class="card">
+                <h3>3. The Adaptation</h3>
+                <p>Muscle isn't built in the gym; it's built during rest. Prioritize deep sleep protocols and active recovery cycles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Routines Section -->
+    <section id="routines" class="routines-section">
+        <h2 class="section-title">The Beginner Hypertrophy Split</h2>
+        <p class="section-subtitle">A high-frequency, 3-day full-body routine designed to maximize muscle protein synthesis.</p>
+        
+        <div class="routine-container">
+            <!-- Day 1 -->
+            <div class="day-block">
+                <div class="day-title">Day 1: Full Body (Focus: Push Heavy)</div>
+                <table class="exercise-table">
+                    <thead>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Rest</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Barbell Bench Press</strong></td>
+                            <td>3</td>
+                            <td>6-8</td>
+                            <td>2-3 mins</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Romanian Deadlifts</strong></td>
+                            <td>3</td>
+                            <td>8-10</td>
+                            <td>2 mins</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lat Pulldowns</strong></td>
+                            <td>3</td>
+                            <td>10-12</td>
+                            <td>90 secs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dumbbell Lateral Raises</strong></td>
+                            <td>3</td>
+                            <td>12-15</td>
+                            <td>60 secs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-block">
+                <div class="day-title">Day 2: Full Body (Focus: Legs Heavy)</div>
+                <table class="exercise-table">
+                    <thead>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Rest</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Barbell Back Squat</strong></td>
+                            <td>3</td>
+                            <td>6-8</td>
+                            <td>3 mins</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Overhead Press (OHP)</strong></td>
+                            <td>3</td>
+                            <td>8-10</td>
+                            <td>2 mins</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Seated Cable Rows</strong></td>
+                            <td>3</td>
+                            <td>10-12</td>
+                            <td>90 secs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Incline Dumbbell Curls</strong></td>
+                            <td>3</td>
+                            <td>10-12</td>
+                            <td>60 secs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Iron Coaching. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
